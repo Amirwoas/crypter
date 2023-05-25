@@ -6,7 +6,7 @@ const NavBar = () => {
          {/* 2 button signUp  and support*/}
           <span className="flex gap-x-2">
             {/* support */}
-            <button className="bg-Pomegranate-500 rounded-lg lg:rounded-xl w-7 h-7 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-Pomegranate-500 rounded-lg lg:rounded-xl w-9 h-9 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
             {/* support logo on mobile viewport */}
             <svg className="lg:hidden" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.93138 1.59636C7.63801 1.46788 8.36203 1.46788 9.06866 1.59636C12.2439 2.17367 14.3866 5.16849 13.9078 8.36007L13.9024 8.39642C12.9352 8.44717 12.1667 9.24743 12.1667 10.2272V11.5605C12.1667 12.5731 12.9875 13.3939 14 13.3939C15.0125 13.3939 15.8334 12.5731 15.8334 11.5605V10.2272C15.8334 9.53326 15.4481 8.93012 14.8802 8.61875L14.8968 8.50841C15.4556 4.78258 12.9543 1.28644 9.24755 0.61249C8.42262 0.462503 7.57742 0.462503 6.75249 0.61249C3.04574 1.28644 0.5444 4.78257 1.10328 8.50841L1.11983 8.61875C0.551923 8.93012 0.166687 9.53326 0.166687 10.2272V11.5605C0.166687 12.5731 0.987498 13.3939 2.00002 13.3939C3.01254 13.3939 3.83335 12.5731 3.83335 11.5605V10.2272C3.83335 9.24743 3.06479 8.44717 2.09766 8.39642L2.09221 8.36007C1.61347 5.16849 3.75615 2.17367 6.93138 1.59636Z" fill="#FAFDFF"/>
@@ -22,7 +22,7 @@ const NavBar = () => {
 
           </button>
             {/* signup and login */}
-            <button className="bg-blue-800 rounded-lg lg:rounded-xl h-7 w-7 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-blue-800 rounded-lg lg:rounded-xl h-9 w-9 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
             {/* signup logo on mobile viewport*/}
             <svg className="lg:hidden" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.99998 0.333344C4.25108 0.333344 2.83331 1.75111 2.83331 3.50001C2.83331 5.24891 4.25108 6.66668 5.99998 6.66668C7.74888 6.66668 9.16665 5.24891 9.16665 3.50001C9.16665 1.75111 7.74888 0.333344 5.99998 0.333344Z" fill="#FAFDFF"/>
