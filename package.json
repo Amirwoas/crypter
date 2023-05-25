@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "alpinejs": "^3.12.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vazirmatn": "^33.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
