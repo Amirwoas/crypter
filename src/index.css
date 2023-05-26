@@ -11,7 +11,7 @@
 @layer utilities {
     /* navbar css */
   .nav {
-    @apply relative group-hover:after:w-full cursor-pointer text-Foam-600 group-hover:text-BlueRibbon-500 flex items-center justify-end after:text-right  h-full after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-0 after:right-0 after:absolute after:bottom-0 after:rounded-xl after:duration-300 ;
+    @apply relative group-hover:after:w-full cursor-pointer text-Foam-600 group-hover:text-BlueRibbon-500 lg:pb-1 flex items-center justify-end after:text-right  h-full after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-0 after:right-0 after:absolute after:bottom-0 after:rounded-xl after:duration-300 ;
   }
   .dynamicNav {
     @apply after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-full after:right-0 after:absolute relative flex items-center justify-center after:bottom-0 after:rounded-xl after:duration-300 text-BlueRibbon-500 font-bold pb-2 stroke-BlueRibbon-500 fill-BlueRibbon-500 text-base;
