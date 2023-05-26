@@ -58,7 +58,7 @@ const NavBar = () => {
                   </svg>
                   </div>
                     {/* content of menu  */}
-                    <div className="flex items-center flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5">
+                    <div className="flex items-center flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5 overflow-hidden">
                       {/* main page icon */}
                       <div className="w-3/5 lg:w-auto">
                         <button className="py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
