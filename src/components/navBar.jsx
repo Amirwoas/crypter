@@ -14,9 +14,9 @@ const NavBar = () => {
          {/* 2 button signUp  and support*/}
           <span className="flex gap-x-2">
             {/* support */}
-            <button className="bg-Pomegranate-500 rounded-lg lg:rounded-xl w-10 h-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-Pomegranate-500 rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
             {/* support logo on mobile viewport */}
-            <svg className="lg:hidden w-6 h-6" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="lg:hidden w-5 h-5" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.93138 1.59636C7.63801 1.46788 8.36203 1.46788 9.06866 1.59636C12.2439 2.17367 14.3866 5.16849 13.9078 8.36007L13.9024 8.39642C12.9352 8.44717 12.1667 9.24743 12.1667 10.2272V11.5605C12.1667 12.5731 12.9875 13.3939 14 13.3939C15.0125 13.3939 15.8334 12.5731 15.8334 11.5605V10.2272C15.8334 9.53326 15.4481 8.93012 14.8802 8.61875L14.8968 8.50841C15.4556 4.78258 12.9543 1.28644 9.24755 0.61249C8.42262 0.462503 7.57742 0.462503 6.75249 0.61249C3.04574 1.28644 0.5444 4.78257 1.10328 8.50841L1.11983 8.61875C0.551923 8.93012 0.166687 9.53326 0.166687 10.2272V11.5605C0.166687 12.5731 0.987498 13.3939 2.00002 13.3939C3.01254 13.3939 3.83335 12.5731 3.83335 11.5605V10.2272C3.83335 9.24743 3.06479 8.44717 2.09766 8.39642L2.09221 8.36007C1.61347 5.16849 3.75615 2.17367 6.93138 1.59636Z" fill="#FAFDFF"/>
             <path d="M5.02024 7.87364C4.82498 7.67838 4.5084 7.67838 4.31313 7.87364C4.11787 8.06891 4.11787 8.38549 4.31313 8.58075L4.5798 8.84742C4.62093 8.88854 4.63775 8.90539 4.65126 8.91929C5.71977 10.0188 5.71977 11.7689 4.65126 12.8684C4.63775 12.8823 4.62092 12.8992 4.5798 12.9403L4.31313 13.207C4.11787 13.4022 4.11787 13.7188 4.31313 13.9141C4.5084 14.1093 4.82498 14.1093 5.02024 13.9141L5.29051 13.6438C5.32695 13.6074 5.34931 13.585 5.36842 13.5653C6.81405 12.0777 6.81405 9.71002 5.36842 8.22238C5.34927 8.20268 5.32701 8.18041 5.29044 8.14384L5.02024 7.87364Z" fill="#FAFDFF"/>
             <path d="M11.6869 8.58075C11.8822 8.38549 11.8822 8.0689 11.6869 7.87364C11.4916 7.67838 11.1751 7.67838 10.9798 7.87364L10.7096 8.14381C10.673 8.1804 10.6508 8.20267 10.6316 8.22238C9.18599 9.71002 9.18599 12.0777 10.6316 13.5653C10.6508 13.585 10.673 13.6073 10.7096 13.6438L10.9798 13.9141C11.1751 14.1093 11.4916 14.1093 11.6869 13.9141C11.8822 13.7188 11.8822 13.4022 11.6869 13.207L11.4202 12.9403C11.3791 12.8992 11.3623 12.8823 11.3488 12.8684C10.2803 11.7689 10.2803 10.0188 11.3488 8.91929C11.3623 8.90539 11.3791 8.88854 11.4202 8.84742L11.6869 8.58075Z" fill="#FAFDFF"/>
@@ -30,9 +30,9 @@ const NavBar = () => {
 
           </button>
             {/* signup and login */}
-            <button className="bg-blue-800 rounded-lg lg:rounded-xl h-10 w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-blue-800 rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
             {/* signup logo on mobile viewport*/}
-            <svg className="lg:hidden w-6 h-6" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="lg:hidden w-5 h-5" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.99998 0.333344C4.25108 0.333344 2.83331 1.75111 2.83331 3.50001C2.83331 5.24891 4.25108 6.66668 5.99998 6.66668C7.74888 6.66668 9.16665 5.24891 9.16665 3.50001C9.16665 1.75111 7.74888 0.333344 5.99998 0.333344Z" fill="#FAFDFF"/>
             <path d="M3.99998 7.66668C2.25108 7.66668 0.833313 9.08444 0.833313 10.8333C0.833313 12.5822 2.25108 14 3.99998 14H7.99998C9.74888 14 11.1666 12.5822 11.1666 10.8333C11.1666 9.08444 9.74888 7.66668 7.99998 7.66668H3.99998Z" fill="#FAFDFF"/>
             </svg>
@@ -48,11 +48,11 @@ const NavBar = () => {
           </span>
               {/* content of nav in both view port */}
               <div className="flex justify-center items-center gap-x-8">
-            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-[100vh] lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-500`}>
+            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-screen lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-500`}>
                 {/* container */}
                 <div className="w-full h-full">
                     {/* close menu icon */}
-                  <div className="w-full lg:hidden h-1/5 lg:h-auto flex justify-end items-center px-10 md:px-16 mb-5">
+                  <div className="w-full lg:hidden mt-20 flex justify-end items-center px-10 md:px-16 mb-5">
                   <svg onClick={()=> setNav(!nav)} className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M14 22.5C13.1716 22.5 12.5 23.1716 12.5 24C12.5 24.8284 13.1716 25.5 14 25.5L30 25.5L30 30C30 31.858 30 32.787 29.8769 33.5643C29.1992 37.8433 25.8433 41.1992 21.5643 41.8769C20.787 42 19.858 42 18 42C16.142 42 15.213 42 14.4357 41.8769C10.1567 41.1992 6.80083 37.8433 6.12311 33.5643C6 32.787 6 31.858 6 30L6 18C6 16.142 6 15.213 6.12312 14.4357C6.80083 10.1567 10.1567 6.80083 14.4357 6.12312C15.213 6 16.142 6 18 6C19.858 6 20.787 6 21.5643 6.12312C25.8433 6.80083 29.1992 10.1567 29.8769 14.4357C30 15.213 30 16.142 30 18L30 22.5L14 22.5ZM30 22.5L39.621 22.5C38.9661 21.8547 38.002 21.0875 36.594 19.9711L33.0681 17.1754C32.4189 16.6607 32.3099 15.7172 32.8246 15.0681C33.3393 14.4189 34.2828 14.3099 34.9319 14.8246L38.5295 17.6771C39.8745 18.7435 40.9843 19.6234 41.775 20.411C42.5863 21.2193 43.2589 22.1163 43.4415 23.2627C43.4804 23.5069 43.5 23.7532 43.5 24C43.5 24.2468 43.4804 24.4931 43.4415 24.7373C43.2589 25.8837 42.5863 26.7808 41.775 27.589C40.9843 28.3766 39.8745 29.2565 38.5295 30.3229L34.9319 33.1754C34.2828 33.6901 33.3393 33.5811 32.8246 32.9319C32.3099 32.2828 32.4189 31.3393 33.0681 30.8246L36.594 28.0289C38.002 26.9125 38.9661 26.1453 39.621 25.5L30 25.5L30 22.5Z" fill="#2150F5"/>
                   </svg>
@@ -60,8 +60,8 @@ const NavBar = () => {
                     {/* content of menu  */}
                     <div className="flex items-center flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5">
                       {/* main page icon */}
-                      <div className="w-3/5 lg:w-auto ">
-                        <button className="py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                      <div className="w-3/5 lg:w-auto">
+                        <button className="py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="dynamicNav ">صفحه اصلی</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600 dynamicSvgColor">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ const NavBar = () => {
                       </div>
                       {/* trading crypto */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">خرید وفروش ارزدیجیتال</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                             <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@ const NavBar = () => {
                        </div>
                       {/* online price */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">قیمت های آنلاین</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@ const NavBar = () => {
                        </div>
                       {/* learn */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">آموزش</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@ const NavBar = () => {
                        </div>
                       {/* blog */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">وبلاگ</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ const NavBar = () => {
                        </div>
                       {/* contact us */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">ارتباط با ما</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
