@@ -9,7 +9,7 @@ const NavBar = () => {
        {/* overally */}
        {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-30 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
       {/* nav */}
-      <nav className="w-full px-1 lg:px-3 absolute py-2 bg-transparent">
+      <nav className="w-full px-1 lg:px-3 absolute py-2 bg-transparent flex">
         <div className="w-full mx-1 lg:mx-3 my-2 border-none bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-30 shadow-xl">
          {/* 2 button signUp  and support*/}
           <span className="flex gap-x-2">
