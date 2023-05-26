@@ -9,8 +9,8 @@ const NavBar = () => {
        {/* overally */}
        {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-30 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
       {/* nav */}
-      <nav className="w-full px-1 lg:px-3 py-2 bg-gray-200">
-        <div className="w-full bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-30">
+      <nav className="w-full px-1 lg:px-3 absolute py-2 bg-transparent">
+        <div className="w-full mx-1 lg:mx-3 my-2 border-none bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-30 shadow-xl">
          {/* 2 button signUp  and support*/}
           <span className="flex gap-x-2">
             {/* support */}
@@ -58,12 +58,12 @@ const NavBar = () => {
                   </svg>
                   </div>
                     {/* content of menu  */}
-                    <div className="flex items-center flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5 overflow-hidden">
+                    <div className="flex items-center gap-y-4 flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5 overflow-hidden">
                       {/* main page icon */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
-                          <p className="dynamicNav ">صفحه اصلی</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600 dynamicSvgColor">
+                        <button className="p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                          <p className="dynamicNav">صفحه اصلی</p>
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600 dynamicSvgColor">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5.29367 2.96556C2.62685 4.90311 1.29344 5.87189 0.769737 7.30291C0.727726 7.41771 0.689938 7.534 0.656451 7.65157C0.239006 9.11711 0.748322 10.6846 1.76696 13.8197C2.78559 16.9547 3.2949 18.5222 4.49405 19.4625C4.59025 19.5379 4.68918 19.6098 4.79064 19.678C5.21729 19.9647 5.68756 20.1546 6.25 20.2805V16.8197C6.25 14.1963 8.37665 12.0697 11 12.0697C13.6234 12.0697 15.75 14.1963 15.75 16.8197V20.2805C16.3124 20.1546 16.7827 19.9647 17.2094 19.678C17.3108 19.6098 17.4098 19.5379 17.506 19.4625C18.7051 18.5222 19.2144 16.9547 20.2331 13.8197C21.2517 10.6846 21.761 9.11711 21.3436 7.65157C21.3101 7.534 21.2723 7.41771 21.2303 7.30291C20.7066 5.87189 19.3732 4.90312 16.7064 2.96557C14.0395 1.02801 12.7061 0.0592252 11.1833 0.00336104C11.0611 -0.00112035 10.9389 -0.00112035 10.8167 0.00336104C9.29389 0.0592251 7.96048 1.02801 5.29367 2.96556Z"/>
                           <path d="M14.25 20.4732V16.8197C14.25 15.0247 12.7949 13.5697 11 13.5697C9.20507 13.5697 7.75 15.0247 7.75 16.8197V20.4732C8.62296 20.5279 9.67917 20.5279 11 20.5279C12.3208 20.5279 13.377 20.5279 14.25 20.4732Z"/>
@@ -73,9 +73,9 @@ const NavBar = () => {
                       </div>
                       {/* trading crypto */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">خرید وفروش ارزدیجیتال</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600">
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600">
                             <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11.0473 6.99343C11.1139 6.95499 11.1816 6.92044 11.2501 6.88969L11.2501 10.92C9.62302 10.2015 9.4706 7.90376 11.0473 6.99343Z"/>
                               <path d="M12.7501 17.1103L12.7501 13.08C14.3772 13.7984 14.5296 16.0962 12.9529 17.0066C12.8863 17.045 12.8186 17.0796 12.7501 17.1103Z"/>
@@ -86,9 +86,9 @@ const NavBar = () => {
                        </div>
                       {/* online price */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">قیمت های آنلاین</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600">
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0453 2.25C13.8818 2.24999 15.3214 2.24999 16.4635 2.37373C17.6291 2.50001 18.5734 2.76232 19.3798 3.34815C19.8679 3.70281 20.2972 4.13209 20.6518 4.62024C21.2377 5.42656 21.5 6.37094 21.6263 7.53648C21.75 8.67859 21.75 10.1182 21.75 11.9547V12.0453C21.75 13.8818 21.75 15.3214 21.6263 16.4635C21.5 17.6291 21.2377 18.5734 20.6518 19.3798C20.2972 19.8679 19.8679 20.2972 19.3798 20.6518C18.5734 21.2377 17.6291 21.5 16.4635 21.6263C15.3214 21.75 13.8818 21.75 12.0453 21.75H11.9547C10.1182 21.75 8.67859 21.75 7.53648 21.6263C6.37094 21.5 5.42656 21.2377 4.62024 20.6518C4.13209 20.2972 3.70281 19.8679 3.34815 19.3798C2.76232 18.5734 2.50001 17.6291 2.37373 16.4635C2.24999 15.3214 2.24999 13.8818 2.25 12.0453V11.9548C2.24999 10.1182 2.24999 8.67861 2.37373 7.53648C2.50001 6.37094 2.76232 5.42656 3.34815 4.62024C3.70281 4.13209 4.13209 3.70281 4.62024 3.34815C5.42656 2.76232 6.37094 2.50001 7.53648 2.37373C8.67861 2.24999 10.1182 2.24999 11.9547 2.25H12.0453ZM12.75 7C12.75 6.58579 12.4142 6.25 12 6.25C11.5858 6.25 11.25 6.58579 11.25 7V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V7ZM16.75 11C16.75 10.5858 16.4142 10.25 16 10.25C15.5858 10.25 15.25 10.5858 15.25 11V17C15.25 17.4142 15.5858 17.75 16 17.75C16.4142 17.75 16.75 17.4142 16.75 17V11ZM8.75 13C8.75 12.5858 8.41421 12.25 8 12.25C7.58579 12.25 7.25 12.5858 7.25 13V17C7.25 17.4142 7.58579 17.75 8 17.75C8.41421 17.75 8.75 17.4142 8.75 17V13Z"/>
                           </svg>
@@ -97,9 +97,9 @@ const NavBar = () => {
                        </div>
                       {/* learn */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">آموزش</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600">
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13.4099 19.5009C12.9957 19.5009 12.6599 19.8367 12.6599 20.2509C12.6599 20.6651 12.9957 21.0009 13.4099 21.0009H19.4099C19.8241 21.0009 20.1599 20.6651 20.1599 20.2509C20.1599 19.8367 19.8241 19.5009 19.4099 19.5009H13.4099Z"/>
                             <path d="M14.2039 4.57541L14.294 4.62741C15.0721 5.07662 15.721 5.45121 16.1961 5.81786C16.6976 6.20485 17.0956 6.64905 17.2623 7.27123C17.429 7.89341 17.3064 8.47711 17.0656 9.063C16.8985 9.46966 16.6527 9.92665 16.3566 10.4479L15.7213 10.0703L15.7131 10.0655L8.78779 6.06719L8.14014 5.68548C8.44023 5.17439 8.71061 4.73786 8.97681 4.39291C9.3638 3.89143 9.808 3.4934 10.4302 3.32669C11.0524 3.15997 11.6361 3.28258 12.222 3.52338C12.777 3.75151 13.4259 4.12615 14.2039 4.57541Z"/>
@@ -110,9 +110,9 @@ const NavBar = () => {
                        </div>
                       {/* blog */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">وبلاگ</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600">
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_117_11194)">
                             <path d="M3.90932 1.70878C9.25925 0.736069 14.7407 0.736069 20.0907 1.70878C22.2097 2.09406 23.75 3.93965 23.75 6.09342V14.4283C23.75 17.3011 21.2153 19.5136 18.3689 19.1255C16.504 18.8712 14.6277 18.7291 12.75 18.6992V21.584C13.3744 21.6277 13.9959 21.7259 14.6073 21.8788L16.1819 22.2724C16.5837 22.3729 16.8281 22.7801 16.7276 23.1819C16.6271 23.5838 16.2199 23.8281 15.8181 23.7277L14.2435 23.334C13.507 23.1499 12.7535 23.0578 12 23.0578C11.2465 23.0578 10.493 23.1499 9.75655 23.334L8.1819 23.7277C7.78006 23.8281 7.37285 23.5838 7.27239 23.1819C7.17193 22.7801 7.41625 22.3729 7.8181 22.2724L9.39274 21.8788C10.0041 21.7259 10.6256 21.6277 11.25 21.584V18.6992C9.37234 18.7291 7.49602 18.8712 5.63113 19.1255C2.78473 19.5136 0.25 17.3011 0.25 14.4283V6.09342C0.25 3.93965 1.79028 2.09406 3.90932 1.70878Z"/>
@@ -128,9 +128,9 @@ const NavBar = () => {
                        </div>
                       {/* contact us */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">ارتباط با ما</p>
-                          <span className="lg:hidden mt-0.5 text-Foam-600">
+                          <span className="lg:hidden mt-0.5 h-full flex mb-1 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.397 3.89454C11.457 3.70182 12.543 3.70182 13.603 3.89454C18.3658 4.76051 21.5798 9.25273 20.8617 14.0401L20.8535 14.0946C19.4028 14.1708 18.25 15.3711 18.25 16.8408V18.8408C18.25 20.3596 19.4812 21.5908 21 21.5908C22.5188 21.5908 23.75 20.3596 23.75 18.8408V16.8408C23.75 15.7999 23.1721 14.8952 22.3203 14.4281L22.3451 14.2626C23.1834 8.67386 19.4314 3.42967 13.8713 2.41873C12.6339 2.19376 11.3661 2.19376 10.1287 2.41873C4.56859 3.42967 0.816569 8.67386 1.65488 14.2626L1.67971 14.4281C0.827854 14.8952 0.25 15.7999 0.25 16.8408V18.8408C0.25 20.3596 1.48122 21.5908 3 21.5908C4.51878 21.5908 5.75 20.3596 5.75 18.8408V16.8408C5.75 15.3711 4.59716 14.1708 3.14647 14.0946L3.13829 14.0401C2.42018 9.25273 5.63419 4.76051 10.397 3.89454Z"/>
                             <path d="M7.53033 13.3105C7.23744 13.0176 6.76256 13.0176 6.46967 13.3105C6.17678 13.6034 6.17678 14.0782 6.46967 14.3711L6.86967 14.7711C6.93136 14.8328 6.9566 14.8581 6.97686 14.8789C8.57962 16.5283 8.57962 19.1533 6.97686 20.8027C6.9566 20.8235 6.93136 20.8488 6.86967 20.9105L6.46967 21.3105C6.17678 21.6034 6.17678 22.0782 6.46967 22.3711C6.76256 22.664 7.23744 22.664 7.53033 22.3711L7.93574 21.9657C7.9904 21.9111 8.02394 21.8775 8.0526 21.848C10.221 19.6166 10.221 16.065 8.0526 13.8336C8.02388 13.804 7.99048 13.7706 7.93563 13.7158L7.53033 13.3105Z"/>
