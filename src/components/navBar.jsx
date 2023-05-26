@@ -48,9 +48,9 @@ const NavBar = () => {
           </span>
               {/* content of nav in both view port */}
               <div className="flex justify-center items-center gap-x-8">
-            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-[110vh] py-20 lg:py-0 lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
+            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-auto h-full py-16 lg:py-0 lg:h-fit lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
                 {/* container */}
-                <div className="w-full h-full">
+                <div className="w-full h-full overflow-hidden">
                     {/* close menu icon */}
                   <div className="w-full lg:hidden mt-20 flex justify-end items-center px-10 md:px-16 mb-5">
                   <svg onClick={()=> setNav(!nav)} className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
