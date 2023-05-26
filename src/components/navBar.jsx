@@ -48,7 +48,7 @@ const NavBar = () => {
           </span>
               {/* content of nav in both view port */}
               <div className="flex justify-center items-center gap-x-8">
-            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-screen py-8 lg:py-0 lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
+            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-[110vh] py-20 lg:py-0 lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
                 {/* container */}
                 <div className="w-full h-full">
                     {/* close menu icon */}
