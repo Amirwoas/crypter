@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <>
        {/* overally */}
-       {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-30 opacity-60 w-full h-screen absolute"></div> : ""}
+       {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-30 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
       {/* nav */}
       <nav className="w-full px-1 lg:px-3 py-2 bg-gray-200">
         <div className="w-full bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-30">
@@ -48,7 +48,7 @@ const NavBar = () => {
           </span>
               {/* content of nav in both view port */}
               <div className="flex justify-center items-center gap-x-8">
-            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-screen lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-500`}>
+            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-screen py-8 lg:py-0 lg:h-auto lg:w-auto z-50 absolute lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
                 {/* container */}
                 <div className="w-full h-full">
                     {/* close menu icon */}
@@ -61,7 +61,7 @@ const NavBar = () => {
                     <div className="flex items-center flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5">
                       {/* main page icon */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="dynamicNav ">صفحه اصلی</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600 dynamicSvgColor">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ const NavBar = () => {
                       </div>
                       {/* trading crypto */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">خرید وفروش ارزدیجیتال</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                             <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@ const NavBar = () => {
                        </div>
                       {/* online price */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">قیمت های آنلاین</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@ const NavBar = () => {
                        </div>
                       {/* learn */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">آموزش</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@ const NavBar = () => {
                        </div>
                       {/* blog */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">وبلاگ</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ const NavBar = () => {
                        </div>
                       {/* contact us */}
                       <div className="w-3/5 lg:w-auto">
-                        <button className="group py-4 px-2 overflow-hidden h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
+                        <button className="group py-4 px-2 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
                           <p className="nav">ارتباط با ما</p>
                           <span className="lg:hidden mt-0.5 text-Foam-600">
                           <svg className="w-6 h-6 fill-current group-hover:text-BlueRibbon-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
