@@ -1,12 +1,12 @@
-
+import NavBar from './components/navBar';
 
 function App() {
   return (
     <>
-      {/* <Footer/> */}
+      <NavBar/>
+
     </>
   );
 }
 
 export default App;
-
