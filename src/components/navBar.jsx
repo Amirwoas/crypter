@@ -6,10 +6,10 @@ const NavBar = () => {
   return (
     <>
        {/* overally */}
-       {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-30 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
+       {nav ? <div onClick={()=> setNav(!nav)} className="bg-Foam-800 z-10 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
       {/* nav */}
       <nav className="w-full px-1 lg:px-3 absolute py-2 bg-transparent flex">
-        <div className="w-full border-none bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-30 shadow-xl">
+        <div className="w-full border-none bg-Foam-50 h-14 lg:h-20 border rounded-xl flex items-center justify-between px-4 lg:px-8 z-20 shadow-xl">
          {/* 2 button signUp  and support*/}
           <span className="flex gap-x-2">
             {/* support */}
@@ -47,7 +47,7 @@ const NavBar = () => {
           </span>
               {/* content of nav in both view port */}
               <div className="flex justify-center items-center gap-x-8">
-            <div className={`${nav ? 'w-full sm:w-2/4 ' : ''} w-0 overflow-hidden h-screen pt-12 lg:py-0 lg:h-fit lg:w-auto z-50 fixed lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
+            <div className={`w-full translate-x-full ${nav ? 'translate-x-0' : ''} sm:w-2/4  h-screen pt-12 lg:py-0 lg:h-fit lg:w-auto z-40 fixed lg:static bg-Foam-50 shadow-2xl lg:shadow-none right-0  bottom-0 duration-300`}>
                 {/* container */}
                 <div className="w-full h-full overflow-hidden">
                     {/* close menu icon */}
@@ -57,7 +57,7 @@ const NavBar = () => {
                   </svg>
                   </div>
                     {/* content of menu  */}
-                    <div className="flex items-center gap-y-4 flex-col lg:flex-row-reverse w-full h-full lg:gap-x-5 overflow-hidden">
+                    <div className="flex items-center gap-y-2 flex-col lg:flex-row-reverse w-full h-full lg:gap-x-1 xl:gap-x-4 overflow-hidden">
                       {/* main page icon */}
                       <div className="w-3/5 lg:w-auto">
                         <button className="p-4 h-full w-full flex items-start justify-end pr-4 lg:pr-0 md:pr-8 gap-x-3">
