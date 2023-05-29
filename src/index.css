@@ -4,20 +4,29 @@
 @tailwind utilities;
 
 * {
-    font-family: entezar;
+  font-family: Vazirmatn, sans-serif;
   /* outline: 1px solid black; */
 }
 
 @layer utilities {
     /* navbar css */
-  .nav {
-    @apply relative group-hover:after:w-full cursor-pointer text-Foam-600 group-hover:text-BlueRibbon-500 lg:pb-1 flex items-center justify-end after:text-right  h-full after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-0 after:right-0 after:absolute after:bottom-0 after:rounded-xl after:duration-300 ;
+  .list {
+    @apply py-4 px-1 hover:font-bold duration-300 relative text-Foam-600 font-medium text-base cursor-pointer after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-0 after:mr-2 hover:after:w-3/5 after:text-right after:right-0 after:absolute after:bottom-2 after:rounded-xl hover:text-BlueRibbon-500 after:duration-300
   }
-  .dynamicNav {
-    @apply after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-full after:right-0 after:absolute relative flex items-center justify-center after:bottom-0 after:rounded-xl after:duration-300 text-BlueRibbon-500 font-bold pb-2 stroke-BlueRibbon-500 fill-BlueRibbon-500 text-base;
+  .listHover {
+    @apply relative group-hover:font-bold pb-4 after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px] after:w-0 group-hover:after:w-full after:text-right after:right-0 after:absolute after:bottom-2 after:rounded-xl group-hover:text-BlueRibbon-500 after:duration-300
   }
-  .dynamicSvgColor {
-    @apply text-BlueRibbon-500;
+  .listMb {
+    @apply flex duration-200 transition-all ease-in-out flex-row-reverse gap-x-4 hover:mr-8  py-4 px-2 text-Foam-600 font-medium text-base cursor-pointer
+  }
+  .activeText {
+    @apply font-bold relative after:content-[''] after:bg-BlueRibbon-500 after:h-[2.5px]  after:w-full after:text-right after:right-0 after:absolute after:bottom-2 after:rounded-xl text-BlueRibbon-500 
+  }
+  .activeIcon {
+    @apply text-BlueRibbon-500
+  }
+  .activeLi {
+      @apply mr-8
   }
   /*  */
 }
