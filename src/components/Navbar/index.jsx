@@ -1,31 +1,42 @@
 import { useState } from 'react';
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <>
-     {open ? <div onClick={()=> setOpen(!open)} className="bg-Foam-800 z-10 opacity-60 w-full lg:hidden h-screen absolute"></div> : ""}
+    {/* overally */}
+      {open ? (
+        <div
+          onClick={() => setOpen(!open)}
+          className="bg-Foam-800 z-40 opacity-60 w-full lg:hidden h-screen fixed"
+        ></div>
+      ) : (
+        ''
+      )}
       {/* hamurger open menu on mobile view */}
-      <div className={`fixed bg-Foam-50 w-full sm:w-2/4 h-screen right-0 bottom-0 z-20 flex flex-col lg:hidden justify-center shadow-2xl duration-200 ${open ? "translate-x-0" : "translate-x-full"}`}>
-      <div className="mx-20 mt-24 flex items-center justify-end">
-              <svg
-                onClick={()=> setOpen(!open)}
-                className="w-16 h-16"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M14 22.5C13.1716 22.5 12.5 23.1716 12.5 24C12.5 24.8284 13.1716 25.5 14 25.5L30 25.5L30 30C30 31.858 30 32.787 29.8769 33.5643C29.1992 37.8433 25.8433 41.1992 21.5643 41.8769C20.787 42 19.858 42 18 42C16.142 42 15.213 42 14.4357 41.8769C10.1567 41.1992 6.80083 37.8433 6.12311 33.5643C6 32.787 6 31.858 6 30L6 18C6 16.142 6 15.213 6.12312 14.4357C6.80083 10.1567 10.1567 6.80083 14.4357 6.12312C15.213 6 16.142 6 18 6C19.858 6 20.787 6 21.5643 6.12312C25.8433 6.80083 29.1992 10.1567 29.8769 14.4357C30 15.213 30 16.142 30 18L30 22.5L14 22.5ZM30 22.5L39.621 22.5C38.9661 21.8547 38.002 21.0875 36.594 19.9711L33.0681 17.1754C32.4189 16.6607 32.3099 15.7172 32.8246 15.0681C33.3393 14.4189 34.2828 14.3099 34.9319 14.8246L38.5295 17.6771C39.8745 18.7435 40.9843 19.6234 41.775 20.411C42.5863 21.2193 43.2589 22.1163 43.4415 23.2627C43.4804 23.5069 43.5 23.7532 43.5 24C43.5 24.2468 43.4804 24.4931 43.4415 24.7373C43.2589 25.8837 42.5863 26.7808 41.775 27.589C40.9843 28.3766 39.8745 29.2565 38.5295 30.3229L34.9319 33.1754C34.2828 33.6901 33.3393 33.5811 32.8246 32.9319C32.3099 32.2828 32.4189 31.3393 33.0681 30.8246L36.594 28.0289C38.002 26.9125 38.9661 26.1453 39.621 25.5L30 25.5L30 22.5Z"
-                  fill="#2150F5"
-                />
-              </svg>
-            </div>
-        <div className="h-full flex w-4/5 mr-[20%]">
-          <ul className="flex w-full h-full flex-col items-end justify-start pt-[20%]">
-
+      <div
+        className={`fixed bg-Foam-50 w-full sm:w-2/4 z-50 h-screen right-0 bottom-0 flex flex-col lg:hidden justify-center shadow-2xl duration-200 ${
+          open ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="mx-20 mt-24 flex items-center justify-start">
+          <svg
+            onClick={() => setOpen(!open)}
+            className="w-16 h-16"
+            viewBox="0 0 48 48" 
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14 22.5C13.1716 22.5 12.5 23.1716 12.5 24C12.5 24.8284 13.1716 25.5 14 25.5L30 25.5L30 30C30 31.858 30 32.787 29.8769 33.5643C29.1992 37.8433 25.8433 41.1992 21.5643 41.8769C20.787 42 19.858 42 18 42C16.142 42 15.213 42 14.4357 41.8769C10.1567 41.1992 6.80083 37.8433 6.12311 33.5643C6 32.787 6 31.858 6 30L6 18C6 16.142 6 15.213 6.12312 14.4357C6.80083 10.1567 10.1567 6.80083 14.4357 6.12312C15.213 6 16.142 6 18 6C19.858 6 20.787 6 21.5643 6.12312C25.8433 6.80083 29.1992 10.1567 29.8769 14.4357C30 15.213 30 16.142 30 18L30 22.5L14 22.5ZM30 22.5L39.621 22.5C38.9661 21.8547 38.002 21.0875 36.594 19.9711L33.0681 17.1754C32.4189 16.6607 32.3099 15.7172 32.8246 15.0681C33.3393 14.4189 34.2828 14.3099 34.9319 14.8246L38.5295 17.6771C39.8745 18.7435 40.9843 19.6234 41.775 20.411C42.5863 21.2193 43.2589 22.1163 43.4415 23.2627C43.4804 23.5069 43.5 23.7532 43.5 24C43.5 24.2468 43.4804 24.4931 43.4415 24.7373C43.2589 25.8837 42.5863 26.7808 41.775 27.589C40.9843 28.3766 39.8745 29.2565 38.5295 30.3229L34.9319 33.1754C34.2828 33.6901 33.3393 33.5811 32.8246 32.9319C32.3099 32.2828 32.4189 31.3393 33.0681 30.8246L36.594 28.0289C38.002 26.9125 38.9661 26.1453 39.621 25.5L30 25.5L30 22.5Z"
+              fill="#2150F5"
+            />
+          </svg>
+        </div>
+        <div className="h-full flex  w-4/5 mr-[20%]">
+          <ul className="flex w-full h-full flex-col items-start justify-start pt-[20%]">
             <li className="group listMb activeLi">
               <span className="text-Foam-600 activeIcon group-hover:text-BlueRibbon-500">
                 <svg
@@ -123,13 +134,13 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-
-      <div className="w-full flex items-center justify-center bg-transparent fixed px-4 lg:px-6 top-3">
-        <div className="w-full px-3 py-2 border flex items-center justify-between shadow-xl rounded-xl">
+        {/* desktop nav */}
+      <div className="w-full xl:container z-10 flex items-center justify-center bg-transparent absolute px-4 lg:px-6 top-3">
+        <div className="w-full px-3 py-2 border flex-row-reverse flex items-center justify-between shadow-xl rounded-xl">
           {/* Btn Leftside */}
           <span className="flex gap-x-3">
             {/* support */}
-            <button className="bg-Pomegranate-500 overflow-hidden rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-Pomegranate-500 hover:stroke-Pomegranate-500 hover:bg-Foam-50 hover:text-Pomegranate-500 hover:ring-Pomegranate-500 hover:ring-2 duration-200 overflow-hidden rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
               {/* support logo on mobile viewport */}
               <svg
                 className="lg:hidden w-5 h-5"
@@ -139,15 +150,15 @@ const Navbar = () => {
               >
                 <path
                   d="M6.93138 1.59636C7.63801 1.46788 8.36203 1.46788 9.06866 1.59636C12.2439 2.17367 14.3866 5.16849 13.9078 8.36007L13.9024 8.39642C12.9352 8.44717 12.1667 9.24743 12.1667 10.2272V11.5605C12.1667 12.5731 12.9875 13.3939 14 13.3939C15.0125 13.3939 15.8334 12.5731 15.8334 11.5605V10.2272C15.8334 9.53326 15.4481 8.93012 14.8802 8.61875L14.8968 8.50841C15.4556 4.78258 12.9543 1.28644 9.24755 0.61249C8.42262 0.462503 7.57742 0.462503 6.75249 0.61249C3.04574 1.28644 0.5444 4.78257 1.10328 8.50841L1.11983 8.61875C0.551923 8.93012 0.166687 9.53326 0.166687 10.2272V11.5605C0.166687 12.5731 0.987498 13.3939 2.00002 13.3939C3.01254 13.3939 3.83335 12.5731 3.83335 11.5605V10.2272C3.83335 9.24743 3.06479 8.44717 2.09766 8.39642L2.09221 8.36007C1.61347 5.16849 3.75615 2.17367 6.93138 1.59636Z"
-                  fill="#FAFDFF"
+                  fill="currentColor"
                 />
                 <path
                   d="M5.02024 7.87364C4.82498 7.67838 4.5084 7.67838 4.31313 7.87364C4.11787 8.06891 4.11787 8.38549 4.31313 8.58075L4.5798 8.84742C4.62093 8.88854 4.63775 8.90539 4.65126 8.91929C5.71977 10.0188 5.71977 11.7689 4.65126 12.8684C4.63775 12.8823 4.62092 12.8992 4.5798 12.9403L4.31313 13.207C4.11787 13.4022 4.11787 13.7188 4.31313 13.9141C4.5084 14.1093 4.82498 14.1093 5.02024 13.9141L5.29051 13.6438C5.32695 13.6074 5.34931 13.585 5.36842 13.5653C6.81405 12.0777 6.81405 9.71002 5.36842 8.22238C5.34927 8.20268 5.32701 8.18041 5.29044 8.14384L5.02024 7.87364Z"
-                  fill="#FAFDFF"
+                  fill="currentColor"
                 />
                 <path
                   d="M11.6869 8.58075C11.8822 8.38549 11.8822 8.0689 11.6869 7.87364C11.4916 7.67838 11.1751 7.67838 10.9798 7.87364L10.7096 8.14381C10.673 8.1804 10.6508 8.20267 10.6316 8.22238C9.18599 9.71002 9.18599 12.0777 10.6316 13.5653C10.6508 13.585 10.673 13.6073 10.7096 13.6438L10.9798 13.9141C11.1751 14.1093 11.4916 14.1093 11.6869 13.9141C11.8822 13.7188 11.8822 13.4022 11.6869 13.207L11.4202 12.9403C11.3791 12.8992 11.3623 12.8823 11.3488 12.8684C10.2803 11.7689 10.2803 10.0188 11.3488 8.91929C11.3623 8.90539 11.3791 8.88854 11.4202 8.84742L11.6869 8.58075Z"
-                  fill="#FAFDFF"
+                  fill="currentColor"
                 />
               </svg>
               {/* support logo on desktop viewport */}
@@ -161,7 +172,7 @@ const Navbar = () => {
               >
                 <path
                   d="M4.55004 15.4083V12.975C4.55004 12.1667 5.18337 11.4417 6.08337 11.4417C6.89171 11.4417 7.61671 12.075 7.61671 12.975V15.3167C7.61671 16.9417 6.26671 18.2917 4.64171 18.2917C3.01671 18.2917 1.66671 16.9333 1.66671 15.3167V10.1833C1.57504 5.50001 5.27504 1.70834 9.95837 1.70834C14.6417 1.70834 18.3334 5.50001 18.3334 10.0917V15.225C18.3334 16.85 16.9834 18.2 15.3584 18.2C13.7334 18.2 12.3834 16.85 12.3834 15.225V12.8833C12.3834 12.075 13.0167 11.35 13.9167 11.35C14.725 11.35 15.45 11.9833 15.45 12.8833V15.4083"
-                  stroke="#FAFDFF"
+                  stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -172,7 +183,7 @@ const Navbar = () => {
               </span>
             </button>
             {/* signup and login */}
-            <button className="bg-blue-800 overflow-hidden rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
+            <button className="bg-BlueRibbon-500 hover:stroke-BlueRibbon-500 hover:bg-Foam-50 hover:text-BlueRibbon-500 hover:ring-BlueRibbon-500 hover:ring-2 duration-200 overflow-hidden rounded-lg lg:rounded-xl w-9 h-9 md:h-10 md:w-10 lg:w-[8rem] lg:h-12 flex items-center justify-around px-1 text-Foam-50 font-semibold text-base">
               {/* signup logo on mobile viewport*/}
               <svg
                 className="lg:hidden w-5 h-5"
@@ -182,11 +193,11 @@ const Navbar = () => {
               >
                 <path
                   d="M5.99998 0.333344C4.25108 0.333344 2.83331 1.75111 2.83331 3.50001C2.83331 5.24891 4.25108 6.66668 5.99998 6.66668C7.74888 6.66668 9.16665 5.24891 9.16665 3.50001C9.16665 1.75111 7.74888 0.333344 5.99998 0.333344Z"
-                  fill="#FAFDFF"
+                  fill="currentColor"
                 />
                 <path
                   d="M3.99998 7.66668C2.25108 7.66668 0.833313 9.08444 0.833313 10.8333C0.833313 12.5822 2.25108 14 3.99998 14H7.99998C9.74888 14 11.1666 12.5822 11.1666 10.8333C11.1666 9.08444 9.74888 7.66668 7.99998 7.66668H3.99998Z"
-                  fill="#FAFDFF"
+                  fill="currentColor"
                 />
               </svg>
               {/* signup logo on desktop viewport */}
@@ -200,7 +211,7 @@ const Navbar = () => {
               >
                 <path
                   d="M16.1582 18.3333C16.1582 15.1083 12.9499 12.5 8.99989 12.5C5.04989 12.5 1.84155 15.1083 1.84155 18.3333M8.99989 9.99999C10.105 9.99999 11.1648 9.561 11.9462 8.7796C12.7276 7.9982 13.1666 6.93839 13.1666 5.83332C13.1666 4.72825 12.7276 3.66845 11.9462 2.88704C11.1648 2.10564 10.105 1.66666 8.99989 1.66666C7.89482 1.66666 6.83501 2.10564 6.05361 2.88704C5.27221 3.66845 4.83322 4.72825 4.83322 5.83332C4.83322 6.93839 5.27221 7.9982 6.05361 8.7796C6.83501 9.561 7.89482 9.99999 8.99989 9.99999Z"
-                  stroke="#FAFDFF"
+                  stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -256,7 +267,7 @@ const Navbar = () => {
           </span>
           {/* hamburger menu on mobile and tablet view */}
           <span
-            onClick={()=> setOpen(!open)}
+            onClick={() => setOpen(!open)}
             className="lg:hidden flex justify-center items-center p-2"
           >
             <svg
