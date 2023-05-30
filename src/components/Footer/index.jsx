@@ -5,14 +5,14 @@ export const Footer = () => {
   return (
     <>
       {/* // container */}
-      <div className="w-full h-full pt-40">
-        <div className="bg-BlueRibbon-600 text-Foam-50 p-6 w-full flex-col h-auto flex">
+      <div className="w-full h-full pt-40 xl:container xl:mx-auto">
+        <div className="flex flex-col w-full h-auto p-6 bg-BlueRibbon-600 text-Foam-50">
           {/* subscribe*/}
-          <div className="w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-10">
+          <div className="flex flex-col items-center justify-center w-full md:flex-row md:justify-between gap-x-10">
             {/* logo and title */}
             <div className='flex flex-col items-center justify-center'>
                  {/* logo */}
-            <div className="w-full flex flex-row-reverse gap-x-2 items-center justify-center">
+            <div className="flex flex-row-reverse items-center justify-center w-full gap-x-2">
               <span>
                 <svg
                   width="117"
@@ -63,21 +63,21 @@ export const Footer = () => {
               </span>
             </div>
             {/* text */}
-            <p className="font-semibold text-sm py-4 md:py-2 text-center w-full">
+            <p className="w-full md:text-xl py-4 text-sm font-semibold text-center md:py-2">
               عضویت در خبرنامه کریپتر آخرین اخبار و اطلاعیه‌ها را در ایمیل خود دریافت
               کنید:
             </p>
             </div>
 
             {/* input */}
-            <label className="flex w-full h-12 relative max-w-lg">
+            <label className="relative flex w-full h-12 max-w-lg">
               <input
-                className="w-full h-full px-4 focus:outline-BlueRibbon-500 focus:outline-1 rounded-lg"
+                className="w-full h-full px-4 text-Foam-700 rounded-lg focus:outline-BlueRibbon-500 focus:outline-1"
                 placeholder="ایمیل خود را وارد کنید"
                 type="text"
                 name="Subscribe"
               />
-              <button className="absolute left-2 bg-BlueRibbon-500 top-0 bottom-0 hover:bg-Foam-50 hover:text-BlueRibbon-500 hover:ring-BlueRibbon-500 hover:ring-2 duration-300 h-10 px-3 rounded-md my-auto">
+              <button className="absolute top-0 bottom-0 h-10 px-3 my-auto duration-300 rounded-md left-2 bg-BlueRibbon-500 hover:bg-Foam-50 hover:text-BlueRibbon-500 hover:ring-BlueRibbon-500 hover:ring-2">
                 عضویت
               </button>
             </label>
@@ -86,7 +86,7 @@ export const Footer = () => {
             <span className="w-full h-0.5 line my-8"></span>
           {/* About crypter */}
           <div className='flex flex-col md:flex-row'>
-            <div className="flex flex-col gap-y-5 md:max-w-[50%]">
+            <div className="flex flex-col gap-y-5 md:max-w-[40%] lg:max-w-[50%]">
             <span>
               <svg
                 width="117"
@@ -121,7 +121,7 @@ export const Footer = () => {
                 />
               </svg>
             </span>
-            <span className="px-5 text-justify">
+            <span className="px-5 md:px-10 text-justify h-full md:text-xl">
               در صرافی ارز دیجیتال کریپتر که امن ترین صرافی کریپتوکارنسی (Cryptocurrency)
               کشور است، شما توانایی خرید و فروش انواع ارزهای دیجیتال معتبر دنیا مانند بیت
               کوین، اتریوم، تتر، دوج کوین، شیبا و ... را به صورت حرفه ای و سریع را خواهید
@@ -132,11 +132,11 @@ export const Footer = () => {
           {/* line */}
           <span className="w-full h-0.5 line my-8 md:hidden"></span>
           {/* accordition */}
-          <div className="flex flex-col gap-y-2 md:w-full">
+          <div className="flex flex-col md:flex-row-reverse gap-y-2 md:w-full">
             {/* accored 1 */}
-            <div>
+            <div className='w-full'>
               {/* title */}
-              <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
+              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
                 <span>لینک های مهم</span>
                 <span className="duration-300 md:hidden">
                   <svg
@@ -156,27 +156,27 @@ export const Footer = () => {
                 </span>
               </span>
               {/* content */}
-              <div className={`px-6 overflow-hidden duration-300 ${accord ? "h-auto" : "h-0"}`}>
-                <ul className="list-disc w-full flex flex-col px-4 font-semibold text-Foam-600">
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
+                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     نحوه ثبت نام{' '}
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     روش های خرید و فروش
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     شیوه های پرداخت
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     مقالات آموزشی
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     وبلاگ کریپتر
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     سوالات متدوال
                   </li>
@@ -201,9 +201,9 @@ export const Footer = () => {
               </svg>
             </span>
             {/* accord 2 */}
-            <div>
+            <div className='w-full'>
               {/* title */}
-              <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
+              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
                 <span>دسترسی سریع</span>
                 <span className="duration-300 md:hidden">
                   <svg
@@ -223,38 +223,38 @@ export const Footer = () => {
                 </span>
               </span>
               {/* content */}
-              <div className={`px-6 overflow-hidden duration-300 ${accord ? "h-auto" : "h-0"}`}>
-                <ul className="list-disc w-full flex flex-col px-4 font-semibold text-Foam-600">
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
+                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     خرید تتر
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     خرید بیت کوین
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     خرید اتریوم
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید دوج کوین
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید bnb
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید سولانا
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید شیبا
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید آواکس
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     خرید متیک
                   </li>
@@ -279,9 +279,9 @@ export const Footer = () => {
               </svg>
             </span>
             {/* accord 3 */}
-            <div>
+            <div className='w-full'>
               {/* title */}
-              <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
+              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
                 <span>راهنمای کریپتر</span>
                 <span className="duration-300 md:hidden">
                   <svg
@@ -301,25 +301,25 @@ export const Footer = () => {
                 </span>
               </span>
               {/* content */}
-              <div className={`px-6 overflow-hidden duration-300 ${accord ? "h-auto" : "h-0"}`}>
-                <ul className="list-disc w-full flex flex-col px-4 font-semibold text-Foam-600">
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
+                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     درباره ما
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     تماس با ما
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     قوانین و مقررات
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     معرفی دوستان
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     فرصت های شغلی
                   </li>
-                  <li className="py-1 hover:text-Foam-50 duration-200 cursor-pointer text-lg">
+                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
                     {' '}
                     اطلاعیه ها
                   </li>
@@ -331,8 +331,8 @@ export const Footer = () => {
           {/* line */}
           <span className="w-full h-0.5 line my-8"></span>
             {/* social media */}
-            <div className='flex w-full flex-col gap-y-4 justify-center items-center'>
-                <span className='font-semibold text-xl'>شبکه های اجتماعی</span>
+            <div className='flex flex-col md:flex-row md:justify-between items-center justify-center w-full gap-y-4 md:p-8'>
+                <span className='text-xl md:text-3xl font-semibold'>شبکه های اجتماعی</span>
                 <div className='flex gap-x-10'>
                     <span className='p-1 cursor-pointer'><BsLinkedin className='text-5xl'/></span>
                     <span className='p-1 cursor-pointer'><BsInstagram className='text-5xl'/></span>
@@ -343,7 +343,7 @@ export const Footer = () => {
             {/* line */}
               <span className="w-full h-0.5 line my-4"></span>
             {/* copy right */}
-            <span className='text-FuelYellow py-6 font-semibold text-xs w-full text-center'>کلیه حقوق مادی و معنوی این صفحه متعلق به امیرحسین شهریاری میباشد</span>
+            <span className='w-full py-6 text-xs md:text-lg font-semibold text-center text-FuelYellow'>کلیه حقوق مادی و معنوی این صفحه متعلق به امیرحسین شهریاری میباشد</span>
         </div>
       </div>
     </>
