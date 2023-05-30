@@ -8,9 +8,10 @@ export const Footer = () => {
       <div className="w-full h-full pt-40">
         <div className="bg-BlueRibbon-600 text-Foam-50 p-6 w-full flex-col h-auto flex">
           {/* subscribe*/}
-          <div className="w-full flex flex-col items-center justify-center">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-10">
             {/* logo and title */}
-            {/* logo */}
+            <div className='flex flex-col items-center justify-center'>
+                 {/* logo */}
             <div className="w-full flex flex-row-reverse gap-x-2 items-center justify-center">
               <span>
                 <svg
@@ -62,13 +63,14 @@ export const Footer = () => {
               </span>
             </div>
             {/* text */}
-            <p className="font-semibold text-sm py-4 text-center w-full">
+            <p className="font-semibold text-sm py-4 md:py-2 text-center w-full">
               عضویت در خبرنامه کریپتر آخرین اخبار و اطلاعیه‌ها را در ایمیل خود دریافت
               کنید:
             </p>
+            </div>
 
             {/* input */}
-            <label className="flex w-full h-12 relative">
+            <label className="flex w-full h-12 relative max-w-lg">
               <input
                 className="w-full h-full px-4 focus:outline-BlueRibbon-500 focus:outline-1 rounded-lg"
                 placeholder="ایمیل خود را وارد کنید"
@@ -79,11 +81,12 @@ export const Footer = () => {
                 عضویت
               </button>
             </label>
+          </div>
             {/* line */}
             <span className="w-full h-0.5 line my-8"></span>
-          </div>
           {/* About crypter */}
-          <div className="flex flex-col gap-y-5">
+          <div className='flex flex-col md:flex-row'>
+            <div className="flex flex-col gap-y-5 md:max-w-[50%]">
             <span>
               <svg
                 width="117"
@@ -127,15 +130,15 @@ export const Footer = () => {
             </span>
           </div>
           {/* line */}
-          <span className="w-full h-0.5 line my-8"></span>
+          <span className="w-full h-0.5 line my-8 md:hidden"></span>
           {/* accordition */}
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2 md:w-full">
             {/* accored 1 */}
             <div>
               {/* title */}
               <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
                 <span>لینک های مهم</span>
-                <span className="duration-300">
+                <span className="duration-300 md:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -181,7 +184,7 @@ export const Footer = () => {
               </div>
             </div>
             {/* line */}
-            <span className="w-full">
+            <span className="w-full md:hidden">
               <svg
                 className="w-full h-1"
                 viewBox="0 0 315 2"
@@ -202,7 +205,7 @@ export const Footer = () => {
               {/* title */}
               <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
                 <span>دسترسی سریع</span>
-                <span className="duration-300">
+                <span className="duration-300 md:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -259,7 +262,7 @@ export const Footer = () => {
               </div>
             </div>
             {/* line */}
-            <span className="w-full">
+            <span className="w-full md:hidden">
               <svg
                 className="w-full h-1"
                 viewBox="0 0 315 2"
@@ -280,7 +283,7 @@ export const Footer = () => {
               {/* title */}
               <span onClick={() => setAccord(!accord)} className="font-extrabold text-2xl flex items-center justify-between p-2">
                 <span>راهنمای کریپتر</span>
-                <span className="duration-300">
+                <span className="duration-300 md:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -324,6 +327,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
+            </div>
           {/* line */}
           <span className="w-full h-0.5 line my-8"></span>
             {/* social media */}
