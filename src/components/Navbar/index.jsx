@@ -15,7 +15,7 @@ const Navbar = () => {
       )}
       {/* hamurger open menu on mobile view */}
       <div
-        className={`fixed bg-Foam-50 w-full sm:w-2/4 z-50 h-screen right-0 bottom-0 flex flex-col lg:hidden justify-center shadow-2xl duration-200 ${
+        className={`fixed bg-Foam-50 w-full sm:w-2/4 z-50 h-screen right-0 bottom-0 overflow-auto flex flex-col lg:hidden justify-center shadow-2xl duration-200 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
