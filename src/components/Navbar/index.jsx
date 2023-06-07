@@ -223,7 +223,7 @@ const Navbar = () => {
             </button>
           </span>
           {/* content of nav in desktop view */}
-          <ul className="lg:flex h-full items-center hidden flex-row-reverse flex-1 lg:mr-3 gap-x-2 xl:gap-x-8">
+          <ul className="lg:flex h-full items-center hidden flex-1 lg:mr-3 gap-x-2 xl:gap-x-8">
             <li className="list">صفحه اصلی</li>
             <li className="list">خرید و فروش ارزدیجیتال</li>
             <li className="list">قیمت های آنلاین</li>

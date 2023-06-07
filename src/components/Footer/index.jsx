@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {BsLinkedin, BsInstagram , BsTwitter, BsFacebook} from "react-icons/bs"
+import Accordition from '../Accordion';
 export const Footer = () => {
   const [accord, setAccord] = useState(false);
   return (
@@ -84,8 +85,8 @@ export const Footer = () => {
           </div>
             {/* line */}
             <span className="w-full h-0.5 line my-8"></span>
-          {/* About crypter */}
           <div className='flex flex-col md:flex-row'>
+          {/* About crypter */}
             <div className="flex flex-col gap-y-5 md:max-w-[40%] lg:max-w-[50%]">
             <span>
               <svg
@@ -121,9 +122,8 @@ export const Footer = () => {
                 />
               </svg>
             </span>
-            <span className="px-5 md:px-10 text-justify h-full md:text-xl">
-              در صرافی ارز دیجیتال کریپتر که امن ترین صرافی کریپتوکارنسی (Cryptocurrency)
-              کشور است، شما توانایی خرید و فروش انواع ارزهای دیجیتال معتبر دنیا مانند بیت
+            <span className="px-10 md:px-8 text-justify h-full md:text-xl lg:text-2xl font-semibold">
+              در صرافی ارز دیجیتال کریپتر که امن ترین صرافی کریپتوکارنسی (Cryptocurrency)              کشور است، شما توانایی خرید و فروش انواع ارزهای دیجیتال معتبر دنیا مانند بیت
               کوین، اتریوم، تتر، دوج کوین، شیبا و ... را به صورت حرفه ای و سریع را خواهید
               داشت.با اطمینان خاطر فراوان در صرافی امن کریپتر اقدام به معامله و خرید ارز
               دیجیتال نمایید. پلتفرم ترید حرفه ای
@@ -131,209 +131,16 @@ export const Footer = () => {
           </div>
           {/* line */}
           <span className="w-full h-0.5 line my-8 md:hidden"></span>
-          {/* accordition */}
-          <div className="flex flex-col md:flex-row-reverse gap-y-2 md:w-full">
-            {/* accored 1 */}
-            <div className='w-full'>
-              {/* title */}
-              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
-                <span>لینک های مهم</span>
-                <span className="duration-300 md:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </span>
-              {/* content */}
-              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
-                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    نحوه ثبت نام{' '}
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    روش های خرید و فروش
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    شیوه های پرداخت
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    مقالات آموزشی
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    وبلاگ کریپتر
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    سوالات متدوال
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* line */}
-            <span className="w-full md:hidden">
-              <svg
-                className="w-full h-1"
-                viewBox="0 0 315 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M314 1L1 1.00003"
-                  stroke="#E9F7FD"
-                  stroke-linecap="round"
-                  stroke-dasharray="10 10"
-                />
-              </svg>
-            </span>
-            {/* accord 2 */}
-            <div className='w-full'>
-              {/* title */}
-              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
-                <span>دسترسی سریع</span>
-                <span className="duration-300 md:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </span>
-              {/* content */}
-              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
-                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    خرید تتر
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    خرید بیت کوین
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    خرید اتریوم
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید دوج کوین
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید bnb
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید سولانا
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید شیبا
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید آواکس
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    خرید متیک
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* line */}
-            <span className="w-full md:hidden">
-              <svg
-                className="w-full h-1"
-                viewBox="0 0 315 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M314 1L1 1.00003"
-                  stroke="#E9F7FD"
-                  stroke-linecap="round"
-                  stroke-dasharray="10 10"
-                />
-              </svg>
-            </span>
-            {/* accord 3 */}
-            <div className='w-full'>
-              {/* title */}
-              <span onClick={() => setAccord(!accord)} className="flex items-center justify-between p-2 text-2xl font-extrabold">
-                <span>راهنمای کریپتر</span>
-                <span className="duration-300 md:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </span>
-              {/* content */}
-              <div className={`px-6 md:px-3 md:h-auto duration-300 ${accord ? "block" : "hidden"} !md:block`}>
-                <ul className="flex flex-col md:w-full px-4 font-semibold list-disc list-inside md:px-0 text-Foam-600">
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    درباره ما
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    تماس با ما
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    قوانین و مقررات
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    معرفی دوستان
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    فرصت های شغلی
-                  </li>
-                  <li className="py-1 text-lg duration-200 cursor-pointer hover:text-Foam-50">
-                    {' '}
-                    اطلاعیه ها
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          {/* acorion */}
+          <Accordition/>
+          {/*  */}
             </div>
           {/* line */}
           <span className="w-full h-0.5 line my-8"></span>
             {/* social media */}
             <div className='flex flex-col md:flex-row md:justify-between items-center justify-center w-full gap-y-4 md:p-8'>
                 <span className='text-xl md:text-3xl font-semibold'>شبکه های اجتماعی</span>
-                <div className='flex gap-x-10'>
+                <div className='flex md:gap-x-10 gap-x-4'>
                     <span className='p-1 cursor-pointer'><BsLinkedin className='text-5xl'/></span>
                     <span className='p-1 cursor-pointer'><BsInstagram className='text-5xl'/></span>
                     <span className='p-1 cursor-pointer'><BsTwitter className='text-5xl'/></span>
