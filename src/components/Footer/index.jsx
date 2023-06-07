@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import {BsLinkedin, BsInstagram , BsTwitter, BsFacebook} from "react-icons/bs"
-import Accordition from '../Accordion';
+import Accordition from '../Footer/Accordion/index';
 export const Footer = () => {
-  const [accord, setAccord] = useState(false);
   return (
     <>
       {/* // container */}
