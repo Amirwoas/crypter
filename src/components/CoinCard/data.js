@@ -29,7 +29,7 @@ let CoinDetail = [
     name: 'DOGE',
     price: 104665,
     change: 180,
-    img: './../../../public/images/CoinCard/Group-doge.svg'
+    img: ''
   },
 ];
 export default CoinDetail
