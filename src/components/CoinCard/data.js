@@ -5,7 +5,7 @@ let CoinDetail = [
     name: 'USDT',
     price: 517500,
     change: 150,
-    img: './../../../public/images/CoinCard/Group-usdt.svg'
+    img: 'https://s8.uupload.ir/files/group-usdt_olxl.png'
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ let CoinDetail = [
     name: 'XRP',
     price: 454540,
     change: 180,
-    img: './../../../public/images/CoinCard/Group-xrp.svg'
+    img: 'https://s8.uupload.ir/files/group-xrp_tbc7.png'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ let CoinDetail = [
     name: 'ADA',
     price: 98540,
     change: 180,
-    img: './../../../public/images/CoinCard/Group-ada.svg'
+    img: 'https://s8.uupload.ir/files/group-ada_9sup.png'
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ let CoinDetail = [
     name: 'DOGE',
     price: 104665,
     change: 180,
-    img: ''
+    img: 'https://s8.uupload.ir/files/group_5-doge_ylm4.png'
   },
 ];
 export default CoinDetail
