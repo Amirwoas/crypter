@@ -3,7 +3,8 @@ import CoinDetail from './data';
 const CoinCard = () => {
   return (
     <>
-      <div className="flex m-24 gap-3">
+  <div className='py-24 px-8'>
+  <div className="flex gap-3">
         {CoinDetail.map((data,index)=>{
             return(
                 <div key={index} className="flex flex-col bg-BlueRibbon-500 w-44 h-52 rounded-[49px] justify-center items-center">
@@ -35,6 +36,7 @@ const CoinCard = () => {
             )
         })}
       </div>
+  </div>
     </>
   );
 };
