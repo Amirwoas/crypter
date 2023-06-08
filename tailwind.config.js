@@ -41,7 +41,7 @@ export default {
           900: '#2E3133',
         },
         BlueCharcoal: '#000517',
-        FuelYellow: '#FFD770',
+        FuelYellow: '#E5AE1F',
         Malachite: '#18CE2A',
       },
       backgroundImage: {

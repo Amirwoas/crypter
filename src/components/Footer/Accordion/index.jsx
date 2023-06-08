@@ -205,17 +205,17 @@ const Accordition = ({open, toggle}) => {
         </div>
       </div>
       {/* desktop */}
-      <div className="h-full hidden md:flex flex-wrap flex-auto">
+      <div className="h-full hidden md:flex flex-auto">
               {data.map((data,index)=> {
                 return (
                   <div key={index} className="flex flex-auto flex-col gap-y-3 items-center">
                   {/* title */}
-                  <span className="font-extrabold text-lg">{data.title}</span>
+                  <span className="font-extrabold text-xl lg:text-2xl ml-8">{data.title}</span>
                   {/* content */}
                   <ul className="list-disc list-inside px-2">
                   {data.content.map((data,index)=> {
                     return(
-                      <li key={index} className="py-1.5 cursor-pointer font-semibold text-base text-Foam-500 hover:text-Foam-50 duration-200">
+                      <li key={index} className="py-1.5 cursor-pointer font-semibold text-lg text-Foam-500 hover:text-Foam-50 duration-200">
                       {data}
                     </li>
                     )
