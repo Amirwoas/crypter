@@ -76,7 +76,7 @@ export const Footer = () => {
                 type="text"
                 name="Subscribe"
               />
-              <button className="absolute top-0 bottom-0 h-10 px-3 my-auto duration-300 rounded-md left-2 bg-BlueRibbon-500 hover:bg-Foam-50 hover:text-BlueRibbon-500 hover:ring-BlueRibbon-500 hover:ring-2">
+              <button className="absolute font-bold top-0 bottom-0 h-10 px-3 my-auto duration-300 rounded-md left-2 bg-BlueRibbon-500 hover:bg-Foam-50 hover:text-BlueRibbon-500 hover:ring-BlueRibbon-500 hover:ring-2">
                 عضویت
               </button>
             </label>
