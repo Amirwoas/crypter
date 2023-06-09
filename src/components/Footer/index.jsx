@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <>
       {/* // container */}
-      <div className="w-full h-full pt-40 xl:container xl:mx-auto">
+      <div className="w-full h-full xl:container xl:mx-auto">
         <div className="flex flex-col w-full h-auto p-6 bg-BlueRibbon-600 text-Foam-50">
           {/* subscribe*/}
           <div className="flex flex-col items-center justify-center w-full md:flex-row md:justify-between gap-x-10">

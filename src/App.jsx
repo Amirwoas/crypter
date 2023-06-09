@@ -5,11 +5,12 @@ import Navbar from "./components/Navbar/index.jsx";
 function App() {
   return (
     <>
-    <div className="xl:container  xl:mx-auto">
+    <div className="xl:container xl:mx-auto">
       <Navbar/>
-      <CoinCard/>
+        <div className="w-full h-full pb-8 pt-28">
+        <CoinCard/>
+        </div>
       <Footer/>
-
     </div>
     </>
   );

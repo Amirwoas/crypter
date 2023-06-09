@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <>
+
     {/* overally */}
       {open ? (
         <div
           onClick={() => setOpen(!open)}
-          className="bg-Foam-800 z-40 opacity-60 overflow-hidden w-full lg:hidden h-screen fixed"
+          className="bg-Foam-800 z-50 opacity-60 w-full lg:hidden h-screen fixed"
         ></div>
       ) : (
         ''

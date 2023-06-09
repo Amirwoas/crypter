@@ -28,7 +28,7 @@ let CoinDetail = [
     persianName: 'دوج',
     name: 'DOGE',
     price: 104665,
-    change: 180,
+    change: 20933,
     img: 'https://s8.uupload.ir/files/group_5-doge_ylm4.png'
   },
 ];
