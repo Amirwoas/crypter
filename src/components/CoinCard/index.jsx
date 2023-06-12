@@ -3,12 +3,12 @@ import CoinDetail from './data';
 const CoinCard = () => {
   return (
     <>
-        <div className="flex gap-3 flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-center items-center gap-5 px-3">
           {CoinDetail.map((data, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col bg-BlueRibbon-500 w-44 h-52 rounded-[49px] justify-center items-center"
+                className="flex flex-col bg-BlueRibbon-500 w-44 h-52 rounded-[49px] justify-center items-center shadow-xl"
               >
                 {/* coin logo */}
                 <span className="w-16 h-16 mb-3">

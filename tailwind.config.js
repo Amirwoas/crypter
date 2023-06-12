@@ -43,6 +43,7 @@ export default {
         BlueCharcoal: '#000517',
         FuelYellow: '#E5AE1F',
         Malachite: '#18CE2A',
+        darkyellow: '#FFF110',
       },
       backgroundImage: {
         'footer': "url('https://s8.uupload.ir/files/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_1_mobile_1jwi.png')",

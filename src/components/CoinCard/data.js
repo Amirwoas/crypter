@@ -11,8 +11,8 @@ let CoinDetail = [
     id: 2,
     persianName: 'ریپل',
     name: 'XRP',
-    price: 454540,
-    change: 180,
+    price: 654540,
+    change: 145400,
     img: 'https://s8.uupload.ir/files/group-xrp_tbc7.png'
   },
   {

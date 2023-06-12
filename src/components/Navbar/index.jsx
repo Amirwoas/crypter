@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -137,8 +137,8 @@ const Navbar = () => {
         </div>
       </div>
         {/* desktop nav */}
-      <div className="w-full xl:container z-10 flex items-center justify-center bg-transparent absolute px-4 lg:px-6 top-3">
-        <div className="w-full px-3 py-2 border flex-row-reverse flex items-center justify-between shadow-xl rounded-xl">
+      <div className="w-full xl:container z-50 flex items-center justify-center absolute px-4 lg:px-6 top-3 bg-transparent">
+        <div className="w-full px-3 py-2 border flex-row-reverse flex items-center justify-between shadow-xl rounded-xl  bg-Foam-50">
           {/* Btn Leftside */}
           <span className="flex gap-x-3">
             {/* support */}

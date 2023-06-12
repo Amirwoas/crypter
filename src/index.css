@@ -36,5 +36,27 @@
       rgba(27, 67, 204, 0) 84.54%
     );
   }
-  /*  */
+  /* coin card */
+  .bg {
+    background-image: url('https://s8.uupload.ir/files/group_942_g2bi.png');
+    background-position: center;
+    background-size: cover;
+  }
+  /* landing page */
+  .land {
+    background-image: url('https://s8.uupload.ir/files/mask_group_te2o.png');
+    background-position: center;
+    background-size: cover;
+  }
+  /* clip patch */
+  .patch {
+    clip-path: path('M 0 400 L 0,65 A 5,7 0,0,1 100,75 L 200 200 z');
+    }
+    /* wallet shadow  */
+    .wallet {
+      background-image: url('https://s8.uupload.ir/files/wallet_1_ly46.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 }
