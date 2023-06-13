@@ -8,7 +8,7 @@ const Landing = () => {
         {/* circle end */}
         <div className="absolute z-20 w-32 h-14 bottom-0 border-none left-1/2 right-1/2 translate-x-1/2 flex">
             {/* img circle */}
-          <img className="w-full h-full absolute z-40" src="https://s8.uupload.ir/files/6c17f875-0ee4-4ac1-90f9-6b694a696350_nn7t.jpg" alt="" />
+          <img className="w-full select-none h-full absolute z-40" src="https://s8.uupload.ir/files/6c17f875-0ee4-4ac1-90f9-6b694a696350_nn7t.jpg" alt="" />
             {/* line */}
             <span className="w-1 z-40 bg-Foam-700 h-7 rounded-full absolute bottom-2 translate-x-1/2 left-1/2 right-[47%] animate-bounce "></span>
         </div>
@@ -24,7 +24,7 @@ const Landing = () => {
               </div>
               {/* wallet */}
               <div className="w-48 sm:w-52 sm:top-10 md:w-80 lg:w-96 absolute md:h-[60vh] left-9 sm:left-16 md:left-[6.45rem] md:top-20 z-30 h-[50vh] flex items-end top-5">
-                  <img className="w-full aspect-auto" src="https://s8.uupload.ir/files/wallet_2_znf0.png" alt="wallet" />
+                  <img className="w-full select-none aspect-auto" src="https://s8.uupload.ir/files/wallet_2_znf0.png" alt="wallet" />
               </div>
             </div>
         </div>
