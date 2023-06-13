@@ -5,8 +5,7 @@ const Navbar = () => {
 
   return (
     <>
-
-    {/* overally */}
+      {/* overally */}
       {open ? (
         <div
           onClick={() => setOpen(!open)}
@@ -25,7 +24,7 @@ const Navbar = () => {
           <svg
             onClick={() => setOpen(!open)}
             className="w-16 h-16"
-            viewBox="0 0 48 48" 
+            viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -37,6 +36,7 @@ const Navbar = () => {
             />
           </svg>
         </div>
+        {/* mobile nav */}
         <div className="h-full flex  w-4/5 mr-[20%]">
           <ul className="flex w-full h-full flex-col items-start justify-start pt-[20%]">
             <li className="group listMb activeLi">
@@ -136,8 +136,8 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-        {/* desktop nav */}
-      <div className="w-full xl:container z-50 flex items-center justify-center absolute px-4 lg:px-6 top-3 bg-transparent">
+      {/* desktop nav */}
+      <div className="w-full xl:container z-40 flex items-center justify-center fixed px-4 lg:px-6 top-3 bg-transparent">
         <div className="w-full px-3 py-2 border flex-row-reverse flex items-center justify-between shadow-xl rounded-xl  bg-Foam-50">
           {/* Btn Leftside */}
           <span className="flex gap-x-3">

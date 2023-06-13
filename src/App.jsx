@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="xl:container xl:mx-auto">
         <Navbar />
-        <div className='w-full h-screen pb-20'>
+        <div className='w-full h-screen mb-20'>
           <Landing/>
         </div>
         <div className="w-full h-full pb-8">
