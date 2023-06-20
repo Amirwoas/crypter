@@ -3,12 +3,12 @@ import CoinDetail from './data';
 const CoinCard = () => {
   return (
     <>
-        <div className="flex flex-wrap justify-center items-center gap-5 px-3">
+        <div className="flex flex-wrap justify-center items-center gap-y-5 gap-x-3 sm:gap-x-5 px-3">
           {CoinDetail.map((data, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col bg-BlueRibbon-500 w-44 h-52 rounded-[49px] justify-center items-center shadow-xl"
+                className="flex flex-col bg-BlueRibbon-500 sm:w-44 w-40 h-48 sm:h-52 rounded-[49px] justify-center items-center shadow-xl"
               >
                 {/* coin logo */}
                 <span className="w-16 h-16 mb-3">
@@ -19,14 +19,14 @@ const CoinCard = () => {
                   />
                 </span>
                 {/* coin name */}
-                <div className="flex items-center gap-x-4 FuelYellow font-extrabold text-base font-mono text-FuelYellow mb-3">
+                <div className="flex items-center gap-x-4 FuelYellow font-extrabold text-base font-mono text-FuelYellow mb-2 sm:mb-3">
                   {/* persian name  */}
                   <p>{data.persianName}</p>
                   {/* english name */}
                   <p>{data.name}</p>
                 </div>
                 {/* rial price */}
-                <span className="text-Foam-50 gap-x-2 flex font-semibold text-lg mb-2">
+                <span className="text-Foam-50 gap-x-2 flex font-semibold text-lg mb-1 sm:mb-2">
                   <p className="tracking-wide">
                     {Intl.NumberFormat().format(data.price)}
                   </p>
